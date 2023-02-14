@@ -1,6 +1,6 @@
-
 import 'package:enabler/domain/core/color_config.dart';
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class CustomProgress extends StatelessWidget {
   const CustomProgress({
@@ -32,6 +32,34 @@ class CustomProgress extends StatelessWidget {
                       height: 100,
                       width: 100,
                       color: kWhite,
+                      child: Center(
+                        child: CircularPercentIndicator(
+                          radius: 40.0,
+                          lineWidth: 5.0,
+                          percent: 0.9,
+                          center: Wrap(
+                            direction: Axis.vertical,
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              const Text(
+                                "01",
+                                style: TextStyle(
+                                  color: kBlack,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Active",
+                                style: TextStyle(
+                                  color: kBlack.withOpacity(0.6),
+                                ),
+                              ),
+                            ],
+                          ),
+                          progressColor: kYellow,
+                        ),
+                      ),
                     ),
                   ),
                   ClipRRect(
@@ -40,6 +68,34 @@ class CustomProgress extends StatelessWidget {
                       height: 100,
                       width: 100,
                       color: kWhite,
+                      child: Center(
+                        child: CircularPercentIndicator(
+                          radius: 40.0,
+                          lineWidth: 5.0,
+                          percent: 0.5,
+                          center: Wrap(
+                            direction: Axis.vertical,
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              const Text(
+                                "05",
+                                style: TextStyle(
+                                  color: kBlack,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Pendinig",
+                                style: TextStyle(
+                                  color: kBlack.withOpacity(0.6),
+                                ),
+                              ),
+                            ],
+                          ),
+                          progressColor: kYellow,
+                        ),
+                      ),
                     ),
                   ),
                   ClipRRect(
@@ -48,6 +104,35 @@ class CustomProgress extends StatelessWidget {
                       height: 100,
                       width: 100,
                       color: kWhite,
+                      child: Center(
+                        child: CircularPercentIndicator(
+                          radius: 40.0,
+                          lineWidth: 5.0,
+                          percent: 0.2,
+                          center: Wrap(
+                            direction: Axis.vertical,
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              const Text(
+                                "04",
+                                style: TextStyle(
+                                  color: kBlack,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Completed",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: kBlack.withOpacity(0.6),
+                                ),
+                              ),
+                            ],
+                          ),
+                          progressColor: kYellow,
+                        ),
+                      ),
                     ),
                   ),
                 ],

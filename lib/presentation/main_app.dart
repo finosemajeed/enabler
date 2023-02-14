@@ -1,3 +1,4 @@
+import 'package:enabler/presentation/create_profile_screen/create_profile_screen.dart';
 import 'package:enabler/presentation/job_details_screen/job_details_screen.dart';
 import 'package:enabler/presentation/main_screen/main_screen.dart';
 import 'package:enabler/presentation/negotiate_screen/negotiate_screen.dart';
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       home: MainScreen(),
       routes: {
         '/job_details_screen': (context) => const JobDetailsScreen(),
-        '/negotiate_screen': (context) => NegotiateScreen(),
+        '/negotiate_screen': (context) => const NegotiateScreen(),
+        '/create_profile_screen': (context) => const CreateProfileScreen(),
       },
     );
   }

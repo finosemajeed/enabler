@@ -9,7 +9,7 @@ class MainScreen extends StatelessWidget {
 
   final _pages = [
     const HomeScreen(),
-     WorksScreen(),
+    const WorksScreen(),
     const WalletScreen()
   ];
 
