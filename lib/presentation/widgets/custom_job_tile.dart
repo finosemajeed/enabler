@@ -140,18 +140,23 @@ class CustomJobTile extends StatelessWidget {
                       ),
                     ],
                   ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Container(
-                      color: kYellow,
-                      child: const Padding(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 6.0, vertical: 3),
-                        child: Text(
-                          'View Details',
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: kBlack,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/job_details_screen');
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Container(
+                        color: kYellow,
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 6.0, vertical: 3),
+                          child: Text(
+                            'View Details',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: kBlack,
+                            ),
                           ),
                         ),
                       ),
