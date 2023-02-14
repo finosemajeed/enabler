@@ -7,3 +7,4 @@ const kRed = Color(0xFFE83838);
 const kBlue = Color(0xFF2288FF);
 const kGreen = Color(0xFF0BB68C);
 const kBlack = Color(0xFF000000);
+const kOffYellow = Color(0xffDAB46D);

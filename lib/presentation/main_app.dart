@@ -1,4 +1,4 @@
-import 'package:enabler/presentation/home_screen/home_screen.dart';
+import 'package:enabler/presentation/main_screen/main_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: MainScreen(),
     );
   }
 }
